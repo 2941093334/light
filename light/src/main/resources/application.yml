@@ -1,0 +1,16 @@
+
+  server:
+    port: 7001
+
+  spring:
+    datasource:
+      url: jdbc:mysql://localhost:3306/light?useUnicode=true&characterEncoding=utf8&useSSL=false&serverTimezone=Asia/Shanghai&allowPublicKeyRetrieval=true
+      username: root
+      password: zzh021014
+      driver-class-name: com.mysql.cj.jdbc.Driver
+
+  mybatis:
+    mapper-locations: classpath:mapper/*.xml
+    type-aliases-package: com.lsj.entity
+    configuration:
+      map-underscore-to-camel-case: true
